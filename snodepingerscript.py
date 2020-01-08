@@ -72,7 +72,8 @@ while len(response['service_node_states']) != counter:
     pingresponse = ping(lokiaddress)
 
     if pingresponse:
-
+        
+        print("got successful response")
         routersreachable += 1
         pass
 
