@@ -64,7 +64,7 @@ while len(response['service_node_states']) != counter:
         counter += 1 
         continue
 
-    time.sleep(60) 
+    time.sleep(25) 
 
     snEDkey = response['service_node_states'][counter]['pubkey_ed25519']
     lokiaddress = zb32_encode(bytes.fromhex(snEDkey)) + ".snode"
